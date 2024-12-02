@@ -8,12 +8,21 @@
 
 //example output: [1,2,3,4,5]
 
-
 function rangeOfNumbers(startNum, endNum) {
-    //base case
-    if(){
-        return [];
+    // base case
+    if (startNum > endNum){
+        // if criteria met, return empty array
+    return []
     } else {
-        const rangeArray = rangeOfNumbers()
+        //recursive case which will continue until the base case is met
+        const numbers = rangeOfNumbers(startNum, endNum-1)
+        //Will push that current end num into the numbers array
+        numbers.push(endNum)
+        //returning the array that has all numbers from startNum to endNum
+        return numbers
     }
-  };
+    
+}
+  
+
+  console.log(rangeOfNumbers(1,2));
