@@ -22,3 +22,16 @@ function processDoll(doll){
 
 }
 ```
+
+## Variable Scope
+- Scope
+    - var: Function scoped. These are accessable within the function they are declared in. 
+    - let/const: Block scoped. These are accessable within the block they are declared in. 
+- Reassignment
+    - var: Can be reassigned. 
+    - let: can be reassigned. 
+    - const: cannot be reassigned after initialization.
+- Best practices
+    - use const for variables that won't be reassigned. 
+    - use let for variables that may be reassigned. 
+    - avoid using var unless you need to support older browsers or require function scoped variables. 
